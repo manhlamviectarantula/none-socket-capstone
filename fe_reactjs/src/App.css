@@ -1,0 +1,216 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&family=Oswald:wght@200..700&display=swap");
+
+/* Áp dụng phông chữ cho toàn bộ ứng dụng */
+body {
+  font-family: "Barlow Condensed", sans-serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Áp dụng phông chữ cho các tiêu đề */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif !important;
+}
+
+/* Các phần tử khác (nếu cần) */
+p,
+a,
+span,
+div,
+input,
+button {
+  font-family: "Barlow Condensed", sans-serif !important;
+}
+
+p{
+  margin: 0;
+}
+
+/* start features area css
+============================================================================================ */
+@media (max-width: 768px) {
+  .features-area {
+    padding-top: 0;
+  }
+}
+.features-area .col-lg-3:last-child .single-features {
+  border-right: 0;
+}
+@media (max-width: 575px) {
+  .features-area .col-lg-3:last-child .single-features {
+    margin-top: 30px;
+  }
+}
+.features-area .col-lg-3:nth-child(3) .single-features,
+.features-area .col-lg-3:nth-child(4) .single-features {
+  margin-bottom: 0;
+}
+
+.features-inner {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px 0;
+}
+
+.single-features {
+  text-align: center;
+  border-right: 1px solid #eeeeee;
+}
+@media (max-width: 991px) {
+  .single-features {
+    border-right: none;
+    margin-bottom: 30px;
+  }
+}
+.single-features .f-icon {
+  margin-bottom: 20px;
+}
+.single-features .f-icon img {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.single-features h6 {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.single-features p {
+  margin-bottom: 0;
+}
+.single-features:hover .f-icon img {
+  opacity: 0.5;
+}
+
+/* start features area css
+  ============================================================================================ */
+
+/*** testimonial Start ***/
+.testimonials-block blockquote {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* start card slider */
+.slider-container {
+  margin: 30px auto 60px;
+  width: 70%;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next {
+  right: -60px;
+}
+
+.prev {
+  left: -60px;
+}
+
+.cardSlider {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px 8px 0 0;
+}
+
+/*** footer start ***/
+.footer a {
+  text-decoration: none !important;
+  /* color: white !important; */
+}
+
+.footer {
+  background: var(--bs-dark);
+}
+
+.footer .footer-item a,
+.footer .footer-item p {
+  color: var(--bs-white);
+  line-height: 40px;
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+.footer .footer-item a:hover {
+  letter-spacing: 2px;
+  color: #eb5ca2 !important;
+}
+
+/*** Footer End ***/
+
+/*** copyright Start ***/
+.copyright {
+  border-top: 1px solid #eb5ca2;
+  background: var(--bs-dark) !important;
+}
+/*** copyright end ***/
+
+.custom-table {
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}
+
+.custom-table th {
+  border: 1px solid black !important; /* Độ dày viền */
+  background-color: #2c3034 !important;
+  color: white !important;
+  text-align: center;
+}
+
+.custom-table-showtimes th {
+  border: 1px solid black !important; /* Độ dày viền */
+  background-color: #2c3034 !important;
+  color: white !important;
+}
+
+.custom-table-showtimes th {
+  text-align: center;
+}
+
+.showtimesdate-list {
+  border: 1px solid black !important;
+  border-radius: 7px !important;
+  padding: 7px 15px !important;
+  margin-left: 20px !important;
+  color: black; /* Màu chữ */
+}
+
+.showtimesdate-list:hover {
+  background-color: #2c3034; /* Màu nền khi hover */
+  color: white !important; /* Màu chữ khi hover */
+}
+
+.seatsrow div {
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 3px 8px;
+}
